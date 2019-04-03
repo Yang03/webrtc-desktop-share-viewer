@@ -9986,7 +9986,7 @@ var IceServersHandler = (function () {
     var iceServers = [
       {
         'urls': [
-          '112.49.23.113:3478'
+          'stun:112.49.23.113:3478'
         ],
         // 'username': 'valley',
         // 'credential': '1234567890'
