@@ -9991,13 +9991,13 @@ var IceServersHandler = (function () {
       //   // 'username': 'valley',
       //   // 'credential': '1234567890'
       // },
-       {
-          'urls': [
-              'stun:webrtcweb.com:7788'
-          ],
-          'username': 'muazkh',
-          'credential': 'muazkh'
-      },
+      //  {
+      //     'urls': [
+      //         'stun:webrtcweb.com:7788'
+      //     ],
+      //     'username': 'muazkh',
+      //     'credential': 'muazkh'
+      // },
       // {
       //     'urls': [
       //         'turn:webrtcweb.com:7788', // coTURN 7788+8877
@@ -10007,14 +10007,14 @@ var IceServersHandler = (function () {
       //     'username': 'muazkh',
       //     'credential': 'muazkh'
       // },
-      // {
-      //     'urls': [
-      //         'stun:stun.l.google.com:19302',
-      //         'stun:stun1.l.google.com:19302',
-      //         'stun:stun2.l.google.com:19302',
-      //         'stun:stun.l.google.com:19302?transport=udp',
-      //     ]
-      // }
+      {
+          'urls': [
+              'stun:stun.l.google.com:19302',
+              'stun:stun1.l.google.com:19302',
+              'stun:stun2.l.google.com:19302',
+              'stun:stun.l.google.com:19302?transport=udp',
+          ]
+      }
     ];
 
     return iceServers;
