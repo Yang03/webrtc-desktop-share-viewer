@@ -9992,13 +9992,13 @@ var IceServersHandler = (function () {
       //   // 'username': 'valley',
       //   // 'credential': '1234567890'
       // },
-       {
-          'urls': [
-              'stun:webrtcweb.com:7788'
-          ],
-          'username': 'muazkh',
-          'credential': 'muazkh'
-      },
+      //  {
+      //     'urls': [
+      //         'stun:webrtcweb.com:7788'
+      //     ],
+      //     'username': 'muazkh',
+      //     'credential': 'muazkh'
+      // },
       {
           'urls': [
               'turn:webrtcweb.com:7788', // coTURN 7788+8877
