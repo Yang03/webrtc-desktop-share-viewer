@@ -9984,13 +9984,13 @@ var IceServersHandler = (function () {
     // resiprocate: 3344+4433
     // pions: 7575
     var iceServers = [
-      // {
-      //   'urls': [
-      //     'stun:112.49.23.113:3478'
-      //   ],
-      //   'username': 'valley',
-      //   'credential': '1234567890'
-      // },
+      {
+        'urls': [
+          'stun:112.49.23.113:3478'
+        ],
+        'username': 'valley',
+        'credential': '1234567890'
+      },
       //  {
       //     'urls': [
       //         'stun:webrtcweb.com:7788'
