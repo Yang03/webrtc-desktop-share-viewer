@@ -8036,8 +8036,7 @@ var RTCMultiConnection = function (roomid, forceOptions) {
                 });
                 var pc = new RTCPeerConnection({
                   iceServers: [{
-                   // urls: "stun:stun.l.google.com:19302"
-                   urls: "stun:112.49.23.113:3478"
+                    urls: "stun:stun.l.google.com:19302"
                   }]
                 }, peerConfig);
                 if (stream && (pc.addStream ? pc.addStream(stream) : pc.addTrack && stream.getTracks()[0] && pc.addTrack(stream.getTracks()[0], stream)), pc.onicecandidate = function (event) {
@@ -8536,19 +8535,16 @@ var RTCMultiConnection = function (roomid, forceOptions) {
     IceServersHandler = {
       getIceServers: function (connection) {
         return [{
-          urls: ["stun:112.49.23.113:3478"]
+          urls: ["stun:webrtcweb.com:7788"],
+          username: "muazkh",
+          credential: "muazkh"
+        }, {
+          urls: ["turn:webrtcweb.com:7788", "turn:webrtcweb.com:8877", "turn:webrtcweb.com:4455"],
+          username: "muazkh",
+          credential: "muazkh"
+        }, {
+          urls: ["stun:stun.l.google.com:19302", "stun:stun1.l.google.com:19302", "stun:stun2.l.google.com:19302", "stun:stun.l.google.com:19302?transport=udp"]
         }]
-        // return [{
-        //   urls: ["stun:webrtcweb.com:7788"],
-        //   username: "muazkh",
-        //   credential: "muazkh"
-        // }, {
-        //   urls: ["turn:webrtcweb.com:7788", "turn:webrtcweb.com:8877", "turn:webrtcweb.com:4455"],
-        //   username: "muazkh",
-        //   credential: "muazkh"
-        // }, {
-        //   urls: ["stun:stun.l.google.com:19302", "stun:stun1.l.google.com:19302", "stun:stun2.l.google.com:19302", "stun:stun.l.google.com:19302?transport=udp"]
-        // }]
       }
     };
 
