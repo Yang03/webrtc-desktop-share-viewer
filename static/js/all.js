@@ -9991,22 +9991,22 @@ var IceServersHandler = (function () {
       //   ]
       // }
       //,
-       {
-          'urls': [
-              'stun:webrtcweb.com:7788'
-          ],
-          'username': 'muazkh',
-          'credential': 'muazkh'
-       },
-      {
-          'urls': [
-              'turn:webrtcweb.com:7788', // coTURN 7788+8877
-              'turn:webrtcweb.com:8877',
-              'turn:webrtcweb.com:4455', // restund udp
-          ],
-          'username': 'muazkh',
-          'credential': 'muazkh'
-      },
+      //  {
+      //     'urls': [
+      //         'stun:webrtcweb.com:7788'
+      //     ],
+      //     'username': 'muazkh',
+      //     'credential': 'muazkh'
+      //  },
+      // {
+      //     'urls': [
+      //         'turn:webrtcweb.com:7788', // coTURN 7788+8877
+      //         'turn:webrtcweb.com:8877',
+      //         'turn:webrtcweb.com:4455', // restund udp
+      //     ],
+      //     'username': 'muazkh',
+      //     'credential': 'muazkh'
+      // },
       {
           'urls': [
               'stun:stun.l.google.com:19302',
