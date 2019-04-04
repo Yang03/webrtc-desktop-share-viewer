@@ -6904,7 +6904,7 @@
             promise.then(successCallback, failureCallback);
             return Promise.resolve();
           };
-          prototype.addIceCandidate = withCallback;
+          prototype.addIceCanxdidate = withCallback;
         },
         shimGetUserMedia: function (window) {
           var navigator = window && window.navigator;
@@ -9984,36 +9984,37 @@ var IceServersHandler = (function () {
     // resiprocate: 3344+4433
     // pions: 7575
     var iceServers = [
-      {
-        'urls': [
-          'stun:112.49.23.113:3478'
-        ]
-      }
-      //,
-      //  {
-      //     'urls': [
-      //         'stun:webrtcweb.com:7788'
-      //     ],
-      //     'username': 'muazkh',
-      //     'credential': 'muazkh'
-      //  },
       // {
-      //     'urls': [
-      //         'turn:webrtcweb.com:7788', // coTURN 7788+8877
-      //         'turn:webrtcweb.com:8877',
-      //         'turn:webrtcweb.com:4455', // restund udp
-      //     ],
-      //     'username': 'muazkh',
-      //     'credential': 'muazkh'
-      // },
-      // {
-      //     'urls': [
-      //         'stun:stun.l.google.com:19302',
-      //         'stun:stun1.l.google.com:19302',
-      //         'stun:stun2.l.google.com:19302',
-      //         'stun:stun.l.google.com:19302?transport=udp',
-      //     ]
+      //   'urls': [
+      //     'stun:112.49.23.113:3478',
+      //     'stun:112.49.23.113:5349'
+      //   ]
       // }
+      //,
+       {
+          'urls': [
+              'stun:webrtcweb.com:7788'
+          ],
+          'username': 'muazkh',
+          'credential': 'muazkh'
+       },
+      {
+          'urls': [
+              'turn:webrtcweb.com:7788', // coTURN 7788+8877
+              'turn:webrtcweb.com:8877',
+              'turn:webrtcweb.com:4455', // restund udp
+          ],
+          'username': 'muazkh',
+          'credential': 'muazkh'
+      },
+      {
+          'urls': [
+              'stun:stun.l.google.com:19302',
+              'stun:stun1.l.google.com:19302',
+              'stun:stun2.l.google.com:19302',
+              'stun:stun.l.google.com:19302?transport=udp',
+          ]
+      }
     ];
 
     return iceServers;
