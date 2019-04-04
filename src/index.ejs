@@ -221,6 +221,8 @@ video {
   };
 
   connection.getExternalIceServers = false;
+  console.log(IceServersHandler)
+  console.log(IceServersHandler.getIceServers())
   connection.iceServers = IceServersHandler.getIceServers();
 
   function setBandwidth(sdp) {
