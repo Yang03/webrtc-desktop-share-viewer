@@ -9986,8 +9986,8 @@ var IceServersHandler = (function () {
     var iceServers = [
       {
         'urls': [
-          'stun:112.49.23.113:3478',
-          'stun:112.49.23.113:5349'
+          'stun:119.3.70.221:3478',
+          'stun:119.3.70.221:5349'
         ]
       }
       //,
