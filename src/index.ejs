@@ -154,8 +154,15 @@ video {
     width: 18px;
     vertical-align: middle;
 }
+#share {
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 9999;
+}
 </style>
-
+<body>
+<a href="javascript:;" id="share">共享屏幕</a>
 <video id="video" autoplay playsinline controls muted="false" volume=1></video>
 
 <div id="overlay">
@@ -499,3 +506,16 @@ video {
     location.reload();
   }, false);
 </script>
+<script>
+  document.getElementById('share').addEventListener('click', function () {
+    chrome.runtime.sendMessage('fopkoipbphbgncbodcdghahciodnddmg', {
+        type: 'shareScreen',
+        msg: 'test'
+      },
+      function (response) {
+        console.log(response);
+      });
+  })
+</script>
+</body>
+</html>
