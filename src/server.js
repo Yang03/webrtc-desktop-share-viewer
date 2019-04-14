@@ -10,11 +10,11 @@ app.set('views', './src')
 app.use(express.static('static'))
 
 
-app.get('/test', function (req, res) {
-  res.render('test')
-})
+// app.get('/test', function (req, res) {
+//   res.render('test')
+// })
 
-app.get('/index', function (req, res) {
+app.get('/', function (req, res) {
   res.render('index')
 })
 
