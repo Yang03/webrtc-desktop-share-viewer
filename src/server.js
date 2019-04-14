@@ -14,6 +14,10 @@ app.get('/', function (req, res) {
   res.render('index')
 })
 
+app.get('/test', function (req, res) {
+  res.render('test')
+})
+
 
 app.listen(3001, function(){
   console.log(`🍺 🍺 server is now running on port 3001`)
